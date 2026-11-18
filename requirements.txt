@@ -1,0 +1,7 @@
+fastapi[standard]>=0.115
+pydantic-settings>=2.6
+sqlalchemy>=2.0.36
+pymysql>=1.1
+cryptography>=43
+pyjwt>=2.9
+bcrypt>=4.2
