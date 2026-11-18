@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T22:00:00.000Z",
+  "title": "Design System: Incentivos",
+  "extensions": {
+    "colorMeta": {
+      "blue": { "role": "primary", "displayName": "Ledger Navy", "canonical": "#1d4580", "tonalRamp": ["#0b1a31", "#12284b", "#163766", "#1d4580", "#3d64a0", "#7f9cc8", "#b9cbe6", "#eaf0f9"] },
+      "blue-hover": { "role": "primary", "displayName": "Pressed Navy", "canonical": "#163766" },
+      "navy-deep": { "role": "primary", "displayName": "Deep Navy", "canonical": "#12284b" },
+      "blue-wash": { "role": "primary", "displayName": "Navy Wash", "canonical": "#eaf0f9" },
+      "blue-line": { "role": "primary", "displayName": "Navy Line", "canonical": "#b9cbe6" },
+      "card-gradient-light": { "role": "primary", "displayName": "Card Gradient Light", "canonical": "#2a5ea6" },
+      "surface": { "role": "neutral", "displayName": "Cool Page", "canonical": "#f4f6fa" },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#ffffff" },
+      "sunken": { "role": "neutral", "displayName": "Sunken", "canonical": "#f7f9fc" },
+      "grid": { "role": "neutral", "displayName": "Grid Hairline", "canonical": "#edf0f5" },
+      "rule": { "role": "neutral", "displayName": "Control Rule", "canonical": "#dde3ec" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#172033", "tonalRamp": ["#0c111c", "#172033", "#2a3447", "#475467", "#667085", "#98a2b3", "#d0d5dd", "#f2f4f7"] },
+      "ink-2": { "role": "neutral", "displayName": "Ink Secondary", "canonical": "#475467" },
+      "ink-3": { "role": "neutral", "displayName": "Ink Muted", "canonical": "#667085" },
+      "ok": { "role": "secondary", "displayName": "Ledger Green", "canonical": "#12805c" },
+      "ok-wash": { "role": "secondary", "displayName": "Green Wash", "canonical": "#e3f5ec" },
+      "warn": { "role": "secondary", "displayName": "Amber Warn", "canonical": "#b25e09" },
+      "warn-wash": { "role": "secondary", "displayName": "Amber Wash", "canonical": "#fdf1e1" },
+      "alert": { "role": "secondary", "displayName": "Signal Red", "canonical": "#c4312f" },
+      "alert-wash": { "role": "secondary", "displayName": "Red Wash", "canonical": "#fdeceb" },
+      "acc-1": { "role": "tertiary", "displayName": "KPI Accent Navy", "canonical": "#1d4580" },
+      "acc-2": { "role": "tertiary", "displayName": "KPI Accent Green", "canonical": "#23a26d" },
+      "acc-3": { "role": "tertiary", "displayName": "KPI Accent Amber", "canonical": "#e3ac2b" },
+      "acc-4": { "role": "tertiary", "displayName": "KPI Accent Orange", "canonical": "#ef8a3c" },
+      "s-18": { "role": "tertiary", "displayName": "Series 18 SKUs", "canonical": "#2b5797" },
+      "s-5": { "role": "tertiary", "displayName": "Series 5 SKUs", "canonical": "#2e9ad8" },
+      "s-solural": { "role": "tertiary", "displayName": "Series SOLURAL", "canonical": "#c27a0e" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Login hero line only." },
+      "headline": { "displayName": "Headline", "purpose": "Page h1; 1.375rem under 640px." },
+      "figure": { "displayName": "Figure", "purpose": "KPI values and card headline numbers; 1.5rem detail figure, 1.125rem secondary/mobile." },
+      "title": { "displayName": "Title", "purpose": "Card titles; 1.0625rem for brand and side-column titles." },
+      "body": { "displayName": "Body", "purpose": "Base text." },
+      "body-sm": { "displayName": "Body small", "purpose": "Tables, lists, nav, buttons, legends." },
+      "label": { "displayName": "Label", "purpose": "Field labels, KPI captions, text actions, small buttons, segmented options, tooltips." },
+      "caption": { "displayName": "Caption", "purpose": "Pills, table headers, data sublabels." },
+      "micro": { "displayName": "Micro", "purpose": "Mobile tab bar labels and navy-card sublabels." },
+      "chart-text": { "displayName": "Chart text (SVG)", "purpose": "Axis 11.5px/500, goal label 11px/600, donut center 17px/700 and 9px/500 caption; chart-internal, not page ramp." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 1px 2px rgba(16, 24, 40, 0.04), 0 6px 20px rgba(16, 24, 40, 0.05)", "purpose": "Every white card (--shadow)." },
+      { "name": "floating", "value": "0 12px 32px rgba(16, 24, 40, 0.14)", "purpose": "Chart tooltip (--shadow-alto)." },
+      { "name": "navy-card", "value": "0 10px 24px rgba(18, 40, 75, 0.28)", "purpose": "Dispenser gradient card only." },
+      { "name": "button-primary", "value": "0 1px 2px rgba(18, 40, 75, 0.2)", "purpose": "Primary button." },
+      { "name": "segment-thumb", "value": "0 1px 3px rgba(16, 24, 40, 0.1)", "purpose": "Active segmented option." },
+      { "name": "tabbar", "value": "0 -4px 16px rgba(16, 24, 40, 0.05)", "purpose": "Mobile bottom tab bar." },
+      { "name": "focus-input", "value": "0 0 0 3px #eaf0f9", "purpose": "Input focus ring (navy wash)." },
+      { "name": "avatar-ring", "value": "0 0 0 1px #edf0f5", "purpose": "Switcher avatar; hover 2px blue-line, active 2px blue." },
+      { "name": "chart-tag", "value": "drop-shadow(0 2px 6px rgba(16, 24, 40, 0.12))", "purpose": "Value tag on the flow chart (SVG filter)." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Single easing for all transitions (--ease)." },
+      { "name": "duration-fast", "value": "120ms", "purpose": "Row hover, tooltip fade." },
+      { "name": "duration-base", "value": "160ms", "purpose": "Buttons, inputs, nav, segmented, legends." },
+      { "name": "duration-slow", "value": "200ms", "purpose": "Refreshing-content opacity." },
+      { "name": "skeleton-sweep", "value": "1.4s linear infinite", "purpose": "Skeleton shimmer; all motion removed under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "dashboard-reflow", "value": "1320px" },
+      { "name": "nav-to-tabbar", "value": "1100px" },
+      { "name": "stack", "value": "860px" },
+      { "name": "filters-stack", "value": "720px" },
+      { "name": "phone", "value": "640px" },
+      { "name": "small-phone", "value": "480px" },
+      { "name": "donut-stack", "value": "420px" }
+    ],
+    "exceptions": [
+      { "value": "font-size: 2.5rem", "where": "doctores .grande", "note": "One-off hero figure on the doctor summary." },
+      { "value": "font-size: 1.75rem", "where": "cuenta .nombre", "note": "One-off account name." },
+      { "value": "font-size: 0.625rem", "where": "usuarios .yo badge", "note": "Below legibility floor; defect, not system." },
+      { "value": "border-radius: 3px", "where": "KPI accent bar", "note": "Rounded ends of the 3px bar." },
+      { "value": "linear-gradient(135deg|150deg, #2a5ea6, blue, navy-deep)", "where": "dispenser card, login panel", "note": "Navy card gradient; not for general surfaces." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action; navy fill, one per region.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Guardar metas</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 16px; border: 1px solid #dde3ec; border-radius: 10px; background: #fff; color: #172033; font: 600 0.875rem/1 'Inter Variable', system-ui, sans-serif; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), border-color 160ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary { background: #1d4580; border-color: #1d4580; color: #fff; box-shadow: 0 1px 2px rgba(18,40,75,0.2); } .ds-btn-primary:hover { background: #163766; border-color: #163766; } .ds-btn-primary:active { background: #12284b; } .ds-btn:focus-visible { outline: 2px solid #1d4580; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Default white button with rule border.",
+      "html": "<button class=\"ds-btn2\">Cancelar</button>",
+      "css": ".ds-btn2 { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 1px solid #dde3ec; border-radius: 10px; background: #fff; color: #172033; font: 600 0.875rem/1 'Inter Variable', system-ui, sans-serif; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), border-color 160ms cubic-bezier(0.16,1,0.3,1); } .ds-btn2:hover { background: #f7f9fc; border-color: #b9cbe6; } .ds-btn2:active { background: #eaf0f9; } .ds-btn2:focus-visible { outline: 2px solid #1d4580; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled field with navy focus ring.",
+      "html": "<label class=\"ds-campo\"><span>Meta mensual</span><input class=\"ds-entrada\" placeholder=\"$0\"></label>",
+      "css": ".ds-campo { display: grid; gap: 6px; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-campo > span { font-size: 0.8125rem; font-weight: 500; color: #475467; } .ds-entrada { min-height: 40px; padding: 8px 12px; border: 1px solid #dde3ec; border-radius: 10px; background: #fff; color: #172033; font: inherit; font-size: 0.9375rem; transition: border-color 160ms cubic-bezier(0.16,1,0.3,1), box-shadow 160ms cubic-bezier(0.16,1,0.3,1); } .ds-entrada:hover { border-color: #b9cbe6; } .ds-entrada:focus { outline: none; border-color: #1d4580; box-shadow: 0 0 0 3px #eaf0f9; }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Soft-rounded nav tabs in the white top bar; active in navy wash.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-activo\" href=\"#\">Dispensadores</a><a href=\"#\">Sucursales</a><a href=\"#\">Doctores</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; padding: 13px 16px; background: #fff; border-bottom: 1px solid #edf0f5; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-nav a { display: inline-flex; align-items: center; height: 38px; padding: 0 14px; border-radius: 10px; font-size: 0.875rem; font-weight: 550; color: #667085; text-decoration: none; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), color 160ms cubic-bezier(0.16,1,0.3,1); } .ds-nav a:hover { background: #f7f9fc; color: #172033; } .ds-nav a.ds-activo { background: #eaf0f9; color: #1d4580; font-weight: 650; } .ds-nav a:focus-visible { outline: 2px solid #1d4580; outline-offset: 2px; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented",
+      "description": "Pill-ish toggle: 12px track, white 9px thumb.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button role=\"radio\" aria-checked=\"true\">6 meses</button><button role=\"radio\" aria-checked=\"false\">12 meses</button></div>",
+      "css": ".ds-seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: 12px; background: #f4f6fa; border: 1px solid #edf0f5; font-family: 'Inter Variable', system-ui, sans-serif; } .ds-seg button { min-height: 32px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: #475467; font: 600 0.8125rem/1 inherit; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16,1,0.3,1), color 160ms cubic-bezier(0.16,1,0.3,1); } .ds-seg button:hover { color: #1d4580; } .ds-seg button[aria-checked='true'] { background: #fff; color: #1d4580; box-shadow: 0 1px 3px rgba(16,24,40,0.1); } .ds-seg button:focus-visible { outline: 2px solid #1d4580; outline-offset: 2px; }"
+    },
+    {
+      "name": "Delta Pills",
+      "kind": "chip",
+      "refersTo": "delta-pill-up",
+      "description": "Context pill beside a figure: up, down, info.",
+      "html": "<span class=\"ds-pill ds-ok\">+35.1%</span> <span class=\"ds-pill ds-mal\">-5.8% vs meta</span> <span class=\"ds-pill ds-azul\">24% de la meta</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; background: #f7f9fc; color: #475467; font: 600 0.75rem/1.4 'Inter Variable', system-ui, sans-serif; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-ok { background: #e3f5ec; color: #12805c; } .ds-mal { background: #fdeceb; color: #c4312f; } .ds-azul { background: #eaf0f9; color: #1d4580; }"
+    },
+    {
+      "name": "KPI Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card with 3px colored accent bar, caption, figure and context pill.",
+      "html": "<div class=\"ds-kpi\"><div class=\"ds-kpi-e\">Venta global</div><div class=\"ds-kpi-f\"><span class=\"ds-kpi-v\">$833,815</span><span class=\"ds-kpi-p\">24% de la meta</span></div></div>",
+      "css": ".ds-kpi { --acento: #1d4580; position: relative; padding: 14px 16px 14px 24px; background: #fff; border: 1px solid #edf0f5; border-radius: 16px; box-shadow: 0 1px 2px rgba(16,24,40,0.04), 0 6px 20px rgba(16,24,40,0.05); font-family: 'Inter Variable', system-ui, sans-serif; max-width: 260px; } .ds-kpi::before { content: ''; position: absolute; left: 12px; top: 14px; bottom: 14px; width: 3px; border-radius: 3px; background: var(--acento); } .ds-kpi-e { font-size: 0.8125rem; color: #667085; } .ds-kpi-f { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 10px; margin-top: 4px; } .ds-kpi-v { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; color: #172033; font-variant-numeric: tabular-nums; } .ds-kpi-p { padding: 2px 8px; border-radius: 999px; background: #eaf0f9; color: #1d4580; font-size: 0.75rem; font-weight: 600; }"
+    },
+    {
+      "name": "Navy Dispenser Card",
+      "kind": "custom",
+      "refersTo": "card-navy",
+      "description": "Signature gradient card identifying the selected dispenser; one per screen.",
+      "html": "<div class=\"ds-ficha\"><div class=\"ds-ficha-a\"><span>Posición #1 de 25</span><b>16.3%</b></div><div class=\"ds-ficha-n\">Cristina Salais</div><div class=\"ds-ficha-b\"><span><small>Sucursal</small>PZA</span><span><small>Venta</small>$135,658</span></div></div>",
+      "css": ".ds-ficha { display: grid; gap: 14px; min-height: 176px; max-width: 300px; padding: 18px 20px; border-radius: 16px; color: #fff; background: linear-gradient(135deg, #2a5ea6 0%, #1d4580 45%, #12284b 100%); box-shadow: 0 10px 24px rgba(18,40,75,0.28); font-family: 'Inter Variable', system-ui, sans-serif; } .ds-ficha-a { display: flex; justify-content: space-between; font-size: 0.8125rem; color: rgba(255,255,255,0.82); } .ds-ficha-a b { font-weight: 650; color: #fff; } .ds-ficha-n { align-self: center; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; text-transform: uppercase; } .ds-ficha-b { display: flex; justify-content: space-between; gap: 12px; font-size: 0.9375rem; font-weight: 650; font-variant-numeric: tabular-nums; } .ds-ficha-b small { display: block; font-size: 0.6875rem; font-weight: 500; color: rgba(255,255,255,0.7); }"
+    },
+    {
+      "name": "Progress Rail",
+      "kind": "custom",
+      "refersTo": "progress-track",
+      "description": "Thin rounded goal rail; navy fill, green when met.",
+      "html": "<div class=\"ds-riel\"><i style=\"width:42%\"></i></div><div class=\"ds-riel\"><i class=\"ds-cumple\" style=\"width:100%\"></i></div>",
+      "css": ".ds-riel { position: relative; height: 8px; margin: 10px 0; border-radius: 999px; background: #edf0f5; overflow: hidden; max-width: 280px; } .ds-riel i { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: #1d4580; } .ds-riel i.ds-cumple { background: #12805c; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Navy Ledger Card",
+    "overview": "Incentivos is a light fintech dashboard. Every figure lives on a white card floating a few pixels above a cool gray-blue page, and every figure is read against something: its goal, its month-end projection, its change. Navy is the single brand voice; it marks action, selection, the main data series and the one dark card that identifies the person being looked at (the dispenser \"ficha\"). Everything else is ink on white, washed tints for state, and four accent colors that tag the KPI row.\n\nDensity is moderate-high: a 300px side column plus a six-track grid of cards on desktop, collapsing to one column on phones with a bottom tab bar. Charts are drawn in-house as SVG: smooth area curves with a dashed projection tail and a dashed green goal line, thin rounded progress rails, a donut with a centered figure, a stacked mix bar. Motion is limited to 120-200ms color, shadow and opacity transitions on one ease curve, and is removed under reduced-motion.\n\nThis world replaces the retired \"Crouwel grid specimen\" (visible grid, square corners, Chakra Petch, diagonal). None of those rules apply.",
+    "keyCharacteristics": [
+      "Light gray-blue page (#f4f6fa), white cards at 16px radius with a soft two-layer shadow and a hairline border.",
+      "Navy #1d4580 as the only brand/action color; one navy gradient card per screen at most.",
+      "KPI cards marked by a 3px rounded vertical accent bar in navy, green, amber or orange.",
+      "Green/red delta pills (999px) beside every key figure.",
+      "Inter Variable everywhere, tabular numerals for all figures, weights 500-700.",
+      "Rounded everything: 16 / 12 / 10 / 9 / 8 / 6 / 999 / 50%."
+    ],
+    "rules": [
+      { "name": "The One Navy Rule", "body": "Navy is the only chrome color. Accent and series colors tag data; they never color buttons, nav or headings.", "section": "colors" },
+      { "name": "The Context Pill Rule", "body": "A headline figure carries its context beside it: a delta pill (green up, red down) or a neutral/info pill with the goal ratio.", "section": "colors" },
+      { "name": "The Tabular Figures Rule", "body": "Every money, percentage and count uses tabular numerals so columns and KPI rows align.", "section": "typography" },
+      { "name": "The Flat Interaction Rule", "body": "Hover changes fill, border or ring color; nothing translates or grows.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** put every figure on a white 16px card with the Card shadow, on the #f4f6fa page.",
+      "**Do** pair headline figures with a delta or goal pill (999px, 0.75rem/600).",
+      "**Do** mark KPI cards with the 3px accent bar, in the navy, green, amber, orange order.",
+      "**Do** use the incentive series colors for 18 SKUs, 5 SKUs and SOLURAL wherever they appear.",
+      "**Do** keep radii on the scale (16, 12, 10, 9, 8, 6, 999, 50%) and nest inner radii smaller than outer.",
+      "**Do** use tabular numerals for all numbers."
+    ],
+    "donts": [
+      "**Don't** use a second typeface; Inter carries everything.",
+      "**Don't** use accent or series colors for chrome (buttons, nav, headings).",
+      "**Don't** put more than one navy gradient card on a screen.",
+      "**Don't** use square corners, visible layout grids or diagonal devices from the retired Crouwel world.",
+      "**Don't** build Power BI-style tile mosaics or generic charts; each chart shows a figure against its goal or projection.",
+      "**Don't** animate position or scale on hover; change color, fill or ring."
+    ]
+  }
+}
